@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .flex-container {
+      display: flex;
+      
+      flex-wrap: wrap;
+      color: white;
+
+    }
+
+
+    .flex-container>div {
+      background-color: #006400;
+      border-radius: 10%;
+      box-shadow: 5px 10px gray;
+      border: #008000 solid 2px;
+      min-width: 20%;
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
+
+    }
+
+    .item1 {
+      grid-area: header;
+      background-color: blue;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px #191970 solid;
+
+    }
+
+    .item3 {
+      grid-area: main;
+      background-color: #228B22;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px #32CD32 solid;
+    }
+
+    .item4 {
+      grid-area: right;
+      background-color: red;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px #800000 solid;
+    }
+
+    .item6 {
+      grid-area: left;
+      background-color: black;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px #800000 solid;
+    }
+
+    .item5 {
+      grid-area: footer;
+      background-color: blue;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px #191970 solid;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header header header header header header header'
+        'left left main main main main right right'
+        'footer footer footer footer footer   footer  footer footer';
+      gap: 10px;
+      color: white;
+
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Grid Layout</h1>
+
+  <p>This grid layout contains six columns and three rows:</p>
+
+  <div class="grid-container">
+    <div class="item1">
+      <div class="cabecalho">Header</div>
+    </div>
+    <div class="item3">
+      <div class="Principal"> Main
+
+      </div>
+
+    </div>
+    <div class="item4">
+      <div class="left">esquerda</div>
+    </div>
+    <div class="item6">
+      <div class="direita">Right</div>
+      <div class="flex-container">
+        <div><a href="">Item 1</a></div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+        <div>Item 9</div>
+        <div>Item 10</div>
+        <div>Item 11</div>
+      </div>
+    </div>
+
+    <div class="item5">
+      <div class="rodape">Footer</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
